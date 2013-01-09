@@ -1299,8 +1299,8 @@ div.icon_delete{
 
 
 /*IE*/
-div.dhx_form_repeat input.radio 	{ margin:-4px 0 0 -4px !ie; }
-div.dhx_form_repeat input.checkbox 	{ margin:0 0 0 -4px !ie; }
+/*div.dhx_form_repeat input.radio 	{ margin:-4px 0 0 -4px !ie; }
+div.dhx_form_repeat input.checkbox 	{ margin:0 0 0 -4px !ie; }*/
 
 /*All*/
 .dhx_form_repeat, .dhx_form_repeat input {

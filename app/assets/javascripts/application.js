@@ -13,9 +13,17 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
+//= require gritter
 //= require dhtmlxscheduler
 //= require_tree .
 
 $(document).ready(function(){
-  scheduler.init('scheduler_here',null,"week");
+  scheduler.config.xml_date="%Y-%m-%d %H:%i";
+  scheduler.init('scheduler_here',null,"month");
+  scheduler.load('/events', 'json');
+
+  dp = new dataProcessor('/events/batch_update');
+  dp.init(scheduler);
+  dp.setTransactionMode("POST", false);
+
 })

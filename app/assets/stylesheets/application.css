@@ -10,5 +10,6 @@
  *
  *= require_self
  *= require dhtmlxscheduler
+ *= require gritter
  * require_tree .
  */
